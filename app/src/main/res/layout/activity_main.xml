@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+   <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      >
+      <ImageView
+          android:layout_width="match_parent"
+          android:layout_height="200dp"
+          android:background="#2196F3"
+          android:id="@+id/iv"
+          />
+      <ImageView
+          android:layout_width="100dp"
+          android:layout_height="100dp"
+         android:background="@drawable/accountbox"
+         android:layout_below="@id/iv"
+         android:layout_marginTop="100dp"
+         android:layout_centerHorizontal="true"
+         android:id="@+id/imageid"
+         />
+
+
+
+
+
+      <EditText
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:layout_below="@+id/imageid"
+          android:background="@drawable/editbox"
+          android:layout_marginTop="50dp"
+          android:layout_marginLeft="30dp"
+          android:layout_marginRight="30dp"
+          android:hint="StudentName"
+          android:paddingLeft="40dp"
+          android:id="@+id/usernameid"
+          />
+      <EditText
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:layout_below="@+id/usernameid"
+          android:background="@drawable/editbox"
+          android:layout_marginTop="30dp"
+          android:layout_marginLeft="30dp"
+          android:layout_marginRight="30dp"
+          android:hint="StudentID"
+          android:paddingLeft="40dp"
+          android:id="@+id/passwordid"
+          />
+
+      <Button
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+         android:layout_below="@+id/passwordid"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="30dp"
+         android:text="Login"
+          android:background="@drawable/button"
+         android:id="@+id/loginid"
+      />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="60dp"
+          android:fontFamily="sans-serif-black"
+          android:text="@string/Heading"
+          android:id="@+id/studlogtextid"
+          android:textSize="50dp" />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/loginid"
+          android:text="NOT REGISTERED?"
+         android:layout_centerHorizontal="true"
+         android:textColor="#050505"
+         android:layout_marginTop="10dp"
+         android:id="@+id/tv"
+         />
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+         android:layout_toRightOf="@+id/tv"
+          android:layout_below="@id/loginid"
+          android:layout_marginTop="10dp"
+          android:textColor="#092FFC"
+         android:text="REGISTER"
+          android:id="@+id/registertvid"
+         />
+
+
+
+   </RelativeLayout>
+
+
+</ScrollView>
